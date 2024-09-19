@@ -1,9 +1,9 @@
 import { parseStringPromise } from "xml2js";
 export async function load() {
-  const serviceKey =
-    "0RybU0fqwHRziyB%2FFUiS7nnUg961HjKF2jqW2b3YUEh%2BjudYvdKb4%2F1kBd7%2F4wiVopJsnDY17ckfKDZnCSXpCw%3D%3D";
+  const serviceKey = import.meta.env.VITE_BUS_API_KEY;
   const stationId = "224000956"; // 산현초
   const stationIdGate = "224000436"; // 산현초 정문
+  console.log(serviceKey);
 
   const url =
     "http://apis.data.go.kr/6410000/busarrivalservice/getBusArrivalList";
@@ -23,6 +23,7 @@ export async function load() {
 
   // 산현초
   const response = await getApiResult(url, serviceKey, stationId);
+  console.log(response.status);
   const text = await response.text();
   const busListSchool = await convertObjectToXml(text);
 
