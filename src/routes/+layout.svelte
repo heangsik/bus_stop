@@ -1,7 +1,6 @@
 <script>
 </script>
 
-header
 <slot />
 
 <style lang="scss" global>

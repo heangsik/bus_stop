@@ -4,12 +4,9 @@
 
   import BusStop from "./BusStop.svelte";
   export let data;
-
-  console.log(data.school);
-  console.log(data.schoolGate);
 </script>
 
-<div>
+<div class="station">
   <BusStop stationName="산현초" />
   {#each data.school as bus}
     <div class="busUnit">
@@ -17,8 +14,7 @@
     </div>
   {/each}
 </div>
-<div>--------------------</div>
-<div>
+<div class="station">
   <BusStop stationName="산현초 정문" />
   {#each data.schoolGate as bus}
     <div class="busUnit">
@@ -28,4 +24,10 @@
 </div>
 
 <style lang="scss">
+  .station {
+    // border: 1px solid #ccc;
+    padding: 10px;
+    margin: 2px;
+    width: 100vw;
+  }
 </style>
