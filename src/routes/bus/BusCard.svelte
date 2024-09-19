@@ -1,7 +1,7 @@
 <script>
   export let bus;
 
-  console.log(bus.toString());
+  //   console.log(bus.toString());
   const cvnBusNo = (routeId) => {
     if (routeId.toString() === "213000014") {
       return "11-3";
@@ -13,6 +13,8 @@
       return "5601";
     } else if (routeId.toString() === "241374008") {
       return "6";
+    } else if (routeId.toString() === "241374009") {
+      return "6-1";
     } else {
       return "error";
     }

@@ -4,6 +4,7 @@
 
   import BusStop from "./BusStop.svelte";
   export let data;
+  //   console.log(data.mschool);
 </script>
 
 <div class="station">
@@ -22,12 +23,20 @@
     </div>
   {/each}
 </div>
+<div class="station">
+  <BusStop stationName="조남중" />
+  {#each data.mschool as bus}
+    <div class="busUnit">
+      <BusCard {bus} />
+    </div>
+  {/each}
+</div>
 
 <style lang="scss">
   .station {
     // border: 1px solid #ccc;
-    padding: 10px;
+    padding: 20px;
     margin: 2px;
-    width: 100vw;
+    width: 100%;
   }
 </style>

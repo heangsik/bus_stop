@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <slot />
 
 <style lang="scss" global>
