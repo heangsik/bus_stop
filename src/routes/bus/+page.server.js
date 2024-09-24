@@ -34,9 +34,9 @@ export async function load() {
   const busListGate = await convertObjectToXml(textGate);
 
   // 조남초,조남중
-  const responseMScool = await getApiResult(url, serviceKey, mschool);
-  const textMScool = await responseMScool.text();
-  const busListMScool = await convertObjectToXml(textMScool);
+  // const responseMScool = await getApiResult(url, serviceKey, mschool);
+  // const textMScool = await responseMScool.text();
+  // const busListMScool = await convertObjectToXml(textMScool);
 
   //   busList.forEach((element) => {
   //     console.log(element);
@@ -46,6 +46,6 @@ export async function load() {
   return {
     school: busListSchool,
     schoolGate: busListGate,
-    mschool: busListMScool,
+    // mschool: busListMScool,
   };
 }

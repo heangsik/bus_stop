@@ -1,15 +1,15 @@
-import Button from './Button.svelte';
+import Button from "./Button.svelte";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 export default {
-  title: 'Example/Button',
+  title: "Example/Button",
   component: Button,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
     size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
     },
   },
 };
@@ -18,26 +18,26 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Button',
+    label: "Button1",
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    label: "Button2",
   },
 };
 
 export const Large = {
   args: {
-    size: 'large',
-    label: 'Button',
+    size: "large",
+    label: "Button3",
   },
 };
 
 export const Small = {
   args: {
-    size: 'small',
-    label: 'Button',
+    size: "small",
+    label: "Button4",
   },
 };
