@@ -23,14 +23,15 @@
     </div>
   {/each}
 </div>
+
 <!-- <div class="station">
   <BusStop stationName="조남중" />
   {#each data.mschool as bus}
     <div class="busUnit">
       <BusCard {bus} />
     </div>
-  {/each} -->
-</div>
+  {/each}
+</div> -->
 
 <style lang="scss">
   .station {
