@@ -24,15 +24,6 @@
   {/each}
 </div>
 
-<!-- <div class="station">
-  <BusStop stationName="조남중" />
-  {#each data.mschool as bus}
-    <div class="busUnit">
-      <BusCard {bus} />
-    </div>
-  {/each}
-</div> -->
-
 <style lang="scss">
   .station {
     // border: 1px solid #ccc;
